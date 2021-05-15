@@ -1,7 +1,4 @@
-- name: windows-cis
-  hosts: all
-
-  tasks:
-  - name: execute now
-    include_role:
-      name: windows-cis
+---
+- hosts: all
+  roles:
+    - { role: windows-cis}
