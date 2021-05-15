@@ -1,4 +1,4 @@
 - name: windows-cis
   hosts: all
   roles:
-    role: windows-cis
+  - windows-cis
