@@ -12,3 +12,8 @@
     section: System Access
     key: NewGuestName
     value: Tutil
+
+- name: Install notepadplusplus 32 bit version
+  win_chocolatey:
+    name: notepadplusplus
+    architecture: x86
