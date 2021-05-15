@@ -11,4 +11,4 @@
   community.windows.win_security_policy:
     section: System Access
     key: NewGuestName
-    value: Guest Account
+    value: Tutil
