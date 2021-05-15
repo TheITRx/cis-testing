@@ -13,4 +13,6 @@
       ansible.builtin.debug:
         msg: "this task runs after the example role"
 
-    - name: this is an empty task
+    - name: explore
+      ansible.builtin.shell
+        cmd: tree
