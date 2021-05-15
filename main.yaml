@@ -1,4 +1,9 @@
 ---
-- hosts: all
-  roles:
-    - { role: windows}
+- name: Main Play
+  hosts: all
+
+  tasks:
+
+  - name: execute Main
+    include_role:
+      name: windows
