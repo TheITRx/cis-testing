@@ -1,8 +1,8 @@
 ---
-- name: {{ item.cis_id }}
+- name: "{{ item.cis_id }}"
   ansible.windows.win_regedit:
-    path: {{ item.path }}
-    name: {{ item.name }}
-    data: {{ item.data }}
-    type: {{ item.type }}
-  loop: {{ cis_reg_controls }}
+    path: "{{ item.path }}"
+    name: "{{ item.name }}"
+    data: "{{ item.data }}"
+    type: "{{ item.type }}"
+  loop: "{{ cis_reg_controls }}"
