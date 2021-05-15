@@ -1,4 +1,4 @@
-- Name: play for debugging
+- name: play for debugging
   hosts: all
 
   tasks:
