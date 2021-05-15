@@ -1,8 +1,14 @@
 ---
-- name: "{{ item.cis_id }}"
+- name: Set registry controls
   ansible.windows.win_regedit:
     path: "{{ item.path }}"
     name: "{{ item.name }}"
     data: "{{ item.data }}"
     type: "{{ item.type }}"
   loop: "{{ cis_reg_controls }}"
+
+- name: Change the guest account name
+  community.windows.win_security_policy:
+    section: System Access
+    key: NewGuestName
+    value: Guest Account
