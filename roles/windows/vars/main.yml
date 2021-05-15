@@ -4,11 +4,11 @@ cis_reg_controls:
   path: HKCU:\Software\MyCompany1
   name: greet1
   data: greet value 1
-  type: dword
+  type: string
 
 - cis_id: cis_id2
   cis_title: this is titlw two
   path: HKCU:\Software\MyCompany1
   name: greet 2
   data: greet value 2
-  type: dword
+  type: string
