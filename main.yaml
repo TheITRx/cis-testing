@@ -1,9 +1,14 @@
 ---
-- name: Main Play
-  hosts: all
-
+- hosts: all
   tasks:
+    - name: Print a message
+      ansible.builtin.debug:
+        msg: "this task runs before the example role"
 
-  - name: execute Main
-    include_role:
-      name: windows
+    - name: Include the example role
+      include_role:
+        name: windows
+
+    - name: Print a message
+      ansible.builtin.debug:
+        msg: "this task runs after the example role"
