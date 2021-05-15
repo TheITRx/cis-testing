@@ -1,0 +1,7 @@
+- Name: play for debugging
+  hosts: all
+
+  tasks:
+  - name: run locall 
+    ansible.builtin.shell:
+      cmd: tree

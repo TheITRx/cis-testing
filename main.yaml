@@ -12,7 +12,3 @@
     - name: Print a message
       ansible.builtin.debug:
         msg: "this task runs after the example role"
-
-    - name: explore
-      ansible.builtin.shell
-        cmd: tree
